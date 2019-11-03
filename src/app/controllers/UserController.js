@@ -10,6 +10,7 @@ class UserController {
 
     const { id, name, email } = await User.create(req.body);
 
+    // personalizando o retorno
     return res.json({
       id,
       name,
